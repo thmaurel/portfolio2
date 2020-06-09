@@ -1,0 +1,50 @@
+#banner {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+.banner-img {
+  width: 600px;
+  border-radius: 50%;
+  height: 600px;
+  object-fit: cover;
+  object-position: right;
+  margin-left: 200px;
+  box-shadow: 0px 0px 10px #67AAF9;
+}
+
+.banner-info {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-info-desc {
+  font-size: 32px;
+}
+
+.banner-info-desc a {
+  color: #67AAF9;
+  text-decoration: none;
+}
+
+.banner-info-cta a {
+  font-size: 32px;
+  color: #67AAF9;
+  border: 1px solid #67AAF9;
+  padding: 8px 15px;
+  border-radius: 5px;
+  width: auto;
+  text-decoration: none;
+}
+
+.banner-info-cta a:hover {
+  color: black;
+  background-color: #67AAF9;
+}

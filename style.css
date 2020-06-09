@@ -1,0 +1,85 @@
+@import 'style/banner.css';
+@import 'style/navbar.css';
+@import 'style/bio.css';
+@import 'style/portfolio.css';
+@import 'style/contact.css';
+
+body {
+  color: rgba(255,255,255,0.9);
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+/*  font-weight: bold;*/
+  margin: 0;
+}
+
+.main-container {
+  position: relative;
+}
+
+#background {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/keyboard.jpg");
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+.text-font {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.blue {
+  color: #67AAF9;
+  font-weight: bold;
+}
+
+.white {
+  color: white;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.only-mobile {
+  display:none;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .only-mobile {
+    display: block;
+  }
+
+  #navbar {
+    display:none;
+  }
+
+  #banner {
+    flex-direction: column;
+  }
+
+  .banner-info {
+    height: 60vh;
+  }
+
+  .banner-img {
+    width: 180px;
+    height: 180px;
+    margin-left: 0;
+  }
+
+  .banner-info-desc {
+    text-align: center;
+  }
+}

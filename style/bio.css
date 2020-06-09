@@ -1,0 +1,36 @@
+#bio {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #67AAF9;
+}
+
+.bio-milestones p {
+  margin: 0;
+}
+
+.bio-card {
+  width: 40vw;
+  height: 40vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-card-skills {
+  width: 40vw;
+  height: 40vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

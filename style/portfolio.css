@@ -1,0 +1,43 @@
+#portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.portfolio-img {
+  width: 50vw;
+  height: 550px;
+  object-fit: cover;
+}
+
+.portfolio-card {
+  width: 50vw;
+  padding-bottom: 190px;
+}
+
+.portfolio-img-wrap {
+  width: 50vw;
+  height: 550px;
+  position: relative;
+}
+
+.portfolio-img-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  padding: 25px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility:hidden;
+  background-color: #67AAF9;
+  opacity: 0.2;
+}
+
+.portfolio-img-wrap:hover .portfolio-img-desc {
+  visibility: visible;
+  opacity: 1;
+}

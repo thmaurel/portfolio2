@@ -1,0 +1,41 @@
+#navbar {
+  position: fixed;
+  height: 10vh;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+/*  background-color: black;*/
+  z-index: 12;
+  animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.navbar-title {
+  font-size: 32px;
+  text-shadow: 12px 20px 6px #67AAF9;
+  width: 50%;
+}
+
+.navbar-title a {
+  text-decoration: none;
+  color:white;
+}
+
+.tabs {
+  display:flex;
+  justify-content: space-between;
+  width: 25vw;
+}
+
+.tabs a {
+  font-size: 24px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+.tabs a:hover {
+  color: #67AAF9;
+}
